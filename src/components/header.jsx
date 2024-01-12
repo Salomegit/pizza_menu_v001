@@ -1,9 +1,10 @@
 import React from 'react'
+import "../styles/index.css"
 
 const Header = () => {
   return (
     <div>
-      <h1>Fast Reat Pizza Co.</h1>
+      <h1 style={{color:"red",fontSize: "45px",textTransform:"uppercase",textAlign:"center",justifyContent:"center",display:"flex"}}>Fast React Pizza Co.</h1>
     </div>
   )
 }
