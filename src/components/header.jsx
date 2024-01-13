@@ -3,9 +3,13 @@ import "../styles/index.css"
 
 const Header = () => {
   return (
+    <header className='header'>
+
+
     <div>
-      <h1 style={{color:"red",fontSize: "45px",textTransform:"uppercase",textAlign:"center",justifyContent:"center",display:"flex"}}>Fast React Pizza Co.</h1>
+      <h1 >Fast React Pizza Co.</h1>
     </div>
+    </header>
   )
 }
 
