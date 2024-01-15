@@ -1,17 +1,17 @@
 import React from 'react'
 import "../styles/index.css"
 
-const Pizza = () => {
+const Pizza = (props) => {
 
 
   return (
     <div className='pizza'>
-      <img src={pizza_data[0].image} alt='pizaa '/>
+      <img src="" alt='pizaa '/>
       <div>
 
-       <h3>{pizza_data[0].name}</h3>
-       <p>{pizza_data[0].ingredients}</p>
-       <span>{pizza_data[0].price}</span>
+       <h3>{props.name}</h3>
+       {/* <p>{pizza_data[0].ingredients}</p>
+       <span>{pizza_data[0].price}</span> */}
       </div>
 
     </div>
