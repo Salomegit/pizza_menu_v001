@@ -4,13 +4,13 @@ import "../styles/index.css"
 
 const Menu = () => {
   return (
-    <div>
+    <main className='menu'>
       <h2>Our Menu</h2>
-      <Pizza/>
-      <Pizza/>
-    <Pizza/>
-    <Pizza/>
-    </div>
+      <div>
+
+        {pi}
+      </div>
+    </main>
   )
 }
 

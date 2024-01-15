@@ -3,7 +3,7 @@ import "../styles/index.css"
 
 const Header = () => {
   return (
-    <header className='header'>
+    <header className='header footer'>
 
 
     <div>

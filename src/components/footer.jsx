@@ -29,7 +29,7 @@ const Footer = () => {
 
 
   </div>
-    <footer>{new Date().toLocaleTimeString()} {NewFunction()}</footer>
+    <footer className="footer">{new Date().toLocaleTimeString()} {NewFunction()}</footer>
     </div>
   )
 }
