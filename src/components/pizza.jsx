@@ -5,16 +5,16 @@ const Pizza = (props) => {
 
 
   return (
-    <div className='pizza'>
-      <img src="" alt='pizaa '/>
+    <li className='pizza'>
+      <img src={props.pizzaObj.image} alt='pizaa '/>
       <div>
 
-       <h3>{props.name}</h3>
-       {/* <p>{pizza_data[0].ingredients}</p>
-       <span>{pizza_data[0].price}</span> */}
+       <h3>{props.pizzaObj.name}</h3>
+       <p>{props.pizzaObj.ingredients}</p>
+       <span>{props.pizzaObj.price}</span>
       </div>
 
-    </div>
+    </li>
   )
 }
 

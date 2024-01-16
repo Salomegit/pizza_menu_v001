@@ -29,7 +29,6 @@ const Footer = () => {
 
 
   </div>
-    <footer className="footer">{new Date().toLocaleTimeString()} {NewFunction()}</footer>
     </div>
   )
 }
