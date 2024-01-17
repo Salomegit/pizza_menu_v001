@@ -55,15 +55,25 @@ const pizza_data = [
 ];
 
 const Menu = () => {
+
+
+  const pizzaNew = pizza_data 
   return (
+    
+    
     <main className='menu'>
       <h2>Our Menu</h2>
-      <ul>
-        {pizza_data.map((pizza)=><Pizza pizzaObj={pizza} key={pizza.name}/>)}
+    { pizzaNew && (
+      <ul className='pizzas'>
+        {pizzaNew.map((pizza)=><Pizza pizzaObj={pizza} key={pizza.name}/>)}
         
       </ul>
+    )}
+
     </main>
-  )
+
+)
 }
+
 
 export default Menu

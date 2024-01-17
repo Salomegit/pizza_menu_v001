@@ -4,32 +4,32 @@ import "../styles/index.css"
 
 const Footer = () => {
   const hour = new Date().getHours()
-  console.log(hour)
-
-  const NewFunction = () => {
-
-  
-    if (hour => 12 &&  hour <= 22) {
-      alert("We are open")
-      
-    }
-    else{
-      alert("We are currenly closed");
-    }
-  }
+  const openHour = 12
+  const closehour = 20
+  const condition = hour >= 9 && hour <= 20
+  console.log(condition)
 
 
   return (
 
-
-    <div>
-
-      <div>
-
+<footer className='footer'>
+  <div className='order'>
+   { hour < openHour ?
 
 
-  </div>
-    </div>
+
+   
+   <p> We are open until {closehour}:00 hours</p> : <p>We are still working on our menu</p>
+
+  } 
+  <button className='btn'>
+   Order
+    </button> 
+   </div>
+</footer>
+
+
+
   )
 }
 
