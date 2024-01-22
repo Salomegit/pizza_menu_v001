@@ -19,7 +19,7 @@ const Footer = () => {
 
 
    
-   <p> We are open until {closehour}:00 hours</p> : <p>We are still working on our menu</p>
+   <p> We are open until {closehour}:00 hours</p> : <p>  We are still working on our menu</p>
 
   } 
   <button className='btn'>
