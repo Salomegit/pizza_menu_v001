@@ -1,18 +1,19 @@
 import React from 'react'
 import "../styles/index.css"
 
-const Pizza = (props) => {
+const Pizza = ({pizzaObj}) => {
 
 
   return (
-    <li className='pizza'>
-      <img src={props.pizzaObj.image} alt='pizaa '/>
-      <div>
+    <li className={`pizza ${pizzaObj.soldOut ? "sold-out" : ""}`}>
+      <img src={pizzaObj.image} alt='pizaa '/>
 
-       <h3>{props.pizzaObj.name}</h3>
-       <p>{props.pizzaObj.ingredients}</p>
-       <span>{props.pizzaObj.price}</span>
-      </div>
+       <h3>{pizzaObj.name}</h3>
+       <p>{pizzaObj.ingredients}</p>
+
+
+
+       <span>{pizzaObj.soldOut? "Pizza is soldout" :pizzaObj.price}</span>
 
     </li>
   )

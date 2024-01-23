@@ -56,20 +56,25 @@ const pizza_data = [
 
 const Menu = () => {
 
-
   const pizzaNew = pizza_data 
+  const num_pizza = pizzaNew.length
   return (
     
     
     <main className='menu'>
       <h2>Our Menu</h2>
-    { pizzaNew && (
+
+    { num_pizza > 0 ?  (
       <ul className='pizzas'>
         {pizzaNew.map((pizza)=><Pizza pizzaObj={pizza} key={pizza.name}/>)}
         
         
       </ul>
-    )}
+      
+    ): (<p>
+      We are still working on the menu
+    </p>)
+    }
 
     </main>
 
