@@ -8,6 +8,7 @@ const Header = () => {
 
     <div>
       <h1 >Fast React Pizza Co.</h1>
+      
     </div>
     </header>
   )
